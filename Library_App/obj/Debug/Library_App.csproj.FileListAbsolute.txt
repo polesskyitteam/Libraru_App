@@ -1,0 +1,49 @@
+c:\users\evgen\documents\visual studio 2013\Projects\Library_App\Library_App\bin\Debug\Library_App.exe.config
+D:\windows\Projects\Library_App\Library_App\bin\Debug\Library_App.exe.config
+D:\windows\Projects\Library_App\Library_App\bin\Debug\Library_App.exe
+D:\windows\Projects\Library_App\Library_App\bin\Debug\Library_App.pdb
+D:\windows\Projects\Library_App\Library_App\obj\Debug\Library_App.DbConfigForm.resources
+D:\windows\Projects\Library_App\Library_App\obj\Debug\Library_App.LoginForm.resources
+D:\windows\Projects\Library_App\Library_App\obj\Debug\Library_App.Properties.Resources.resources
+D:\windows\Projects\Library_App\Library_App\obj\Debug\Library_App.AdminForm.resources
+D:\windows\Projects\Library_App\Library_App\obj\Debug\Library_App.ServiseForm.resources
+D:\windows\Projects\Library_App\Library_App\obj\Debug\Library_App.csproj.GenerateResource.Cache
+D:\windows\Projects\Library_App\Library_App\obj\Debug\Library_App.exe
+D:\windows\Projects\Library_App\Library_App\obj\Debug\Library_App.pdb
+D:\windows\Projects\Library_App\Library_App\obj\Debug\Library_App.csprojResolveAssemblyReference.cache
+C:\Users\Evgen\Desktop\Library_App\Library_App\bin\Debug\Library_App.exe.config
+C:\Users\Evgen\Desktop\Library_App\Library_App\obj\Debug\Library_App.exe
+C:\Users\Evgen\Desktop\Library_App\Library_App\obj\Debug\Library_App.pdb
+C:\Users\Evgen\Desktop\Library_App\Library_App\bin\Debug\Library_App.exe
+C:\Users\Evgen\Desktop\Library_App\Library_App\bin\Debug\Library_App.pdb
+C:\Users\Evgen\Desktop\Library_App\Library_App\obj\Debug\Library_App.DbConfigForm.resources
+C:\Users\Evgen\Desktop\Library_App\Library_App\obj\Debug\Library_App.LoginForm.resources
+C:\Users\Evgen\Desktop\Library_App\Library_App\obj\Debug\Library_App.Properties.Resources.resources
+C:\Users\Evgen\Desktop\Library_App\Library_App\obj\Debug\Library_App.AdminForm.resources
+C:\Users\Evgen\Desktop\Library_App\Library_App\obj\Debug\Library_App.ServiseForm.resources
+C:\Users\Evgen\Desktop\Library_App\Library_App\obj\Debug\Library_App.csproj.GenerateResource.Cache
+C:\Users\Evgen\Desktop\Library_App\Library_App\obj\Debug\Library_App.csprojResolveAssemblyReference.cache
+D:\university\курсач\Library_App\Library_App\bin\Debug\Library_App.exe.config
+D:\university\курсач\Library_App\Library_App\obj\Debug\Library_App.exe
+D:\university\курсач\Library_App\Library_App\obj\Debug\Library_App.pdb
+D:\university\курсач\Library_App\Library_App\bin\Debug\Library_App.exe
+D:\university\курсач\Library_App\Library_App\bin\Debug\Library_App.pdb
+D:\university\курсач\Library_App\Library_App\obj\Debug\Library_App.csprojResolveAssemblyReference.cache
+D:\university\курсач\Library_App\Library_App\obj\Debug\Library_App.DbConfigForm.resources
+D:\university\курсач\Library_App\Library_App\obj\Debug\Library_App.LoginForm.resources
+D:\university\курсач\Library_App\Library_App\obj\Debug\Library_App.Properties.Resources.resources
+D:\university\курсач\Library_App\Library_App\obj\Debug\Library_App.AdminForm.resources
+D:\university\курсач\Library_App\Library_App\obj\Debug\Library_App.ServiseForm.resources
+D:\university\курсач\Library_App\Library_App\obj\Debug\Library_App.csproj.GenerateResource.Cache
+D:\university\2 курс\курсач\Library_App\Library_App\bin\Debug\Library_App.exe.config
+D:\university\2 курс\курсач\Library_App\Library_App\obj\Debug\Library_App.exe
+D:\university\2 курс\курсач\Library_App\Library_App\obj\Debug\Library_App.pdb
+D:\university\2 курс\курсач\Library_App\Library_App\bin\Debug\Library_App.exe
+D:\university\2 курс\курсач\Library_App\Library_App\bin\Debug\Library_App.pdb
+D:\university\2 курс\курсач\Library_App\Library_App\obj\Debug\Library_App.csprojResolveAssemblyReference.cache
+D:\university\2 курс\курсач\Library_App\Library_App\obj\Debug\Library_App.DbConfigForm.resources
+D:\university\2 курс\курсач\Library_App\Library_App\obj\Debug\Library_App.LoginForm.resources
+D:\university\2 курс\курсач\Library_App\Library_App\obj\Debug\Library_App.Properties.Resources.resources
+D:\university\2 курс\курсач\Library_App\Library_App\obj\Debug\Library_App.AdminForm.resources
+D:\university\2 курс\курсач\Library_App\Library_App\obj\Debug\Library_App.ServiseForm.resources
+D:\university\2 курс\курсач\Library_App\Library_App\obj\Debug\Library_App.csproj.GenerateResource.Cache
