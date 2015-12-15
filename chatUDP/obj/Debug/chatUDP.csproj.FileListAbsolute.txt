@@ -6,3 +6,4 @@ D:\university\2 курс\курсач\Library_App\ChatUdp\obj\Debug\ChatUdp.Prop
 D:\university\2 курс\курсач\Library_App\ChatUdp\obj\Debug\ChatUdp.csproj.GenerateResource.Cache
 D:\university\2 курс\курсач\Library_App\ChatUdp\obj\Debug\ChatUdp.exe
 D:\university\2 курс\курсач\Library_App\ChatUdp\obj\Debug\ChatUdp.pdb
+D:\university\2 курс\курсач\Library_App\ChatUdp\obj\Debug\ChatUdp.csprojResolveAssemblyReference.cache

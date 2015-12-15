@@ -24,34 +24,15 @@ namespace ChatUdp
         IPAddress groupAddress; // адрес для групповой рассылки
         string userName; 
 
+
+
         public ChatUdp(string userName)
-        {
-            groupAddress = IPAddress.Parse(HOST);
+        {           
             InitializeComponent();
 
             usersLabel.Text = userName;
             this.userName = userName;
-
-            try
-            {
-                client = new UdpClient(LOCALPORT);
-                // присоединяемся к групповой рассылке
-                client.JoinMulticastGroup(groupAddress, TTL);
-
-                // запускаем задачу на прием сообщений
-                Task receiveTask = new Task(ReceiveMessages);    
-                receiveTask.Start();
-
-                // отправляем первое сообщение о входе нового пользователя
-                string message = userName + " вошел в чат";
-                byte[] data = Encoding.Unicode.GetBytes(message);
-                client.Send(data, data.Length, HOST, REMOTEPORT);
-                
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message,"жопа!!!");
-            }
+                        
         }
 
         private void ReceiveMessages()
@@ -93,22 +74,15 @@ namespace ChatUdp
 
         private void Exit_Click(object sender, EventArgs e)
         {
-            ExitChat(); 
-            this.Visible = false;
-        }
-
-        private void ExitChat()
-        {
             string message = userName + " покидает чат";
             byte[] data = Encoding.Unicode.GetBytes(message);
             client.Send(data, data.Length, HOST, REMOTEPORT);
             client.DropMulticastGroup(groupAddress);
 
             alive = false;
-            client.Close();
-
+            client.Close();          
         }
-
+     
         private void sendMessagesButton_Click(object sender, EventArgs e)
         {
             try
@@ -123,5 +97,33 @@ namespace ChatUdp
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void EnteringButton_Click(object sender, EventArgs e)
+        {
+            groupAddress = IPAddress.Parse(HOST);
+
+            try
+            {
+                client = new UdpClient(LOCALPORT);
+                // присоединяемся к групповой рассылке
+                client.JoinMulticastGroup(groupAddress, TTL);
+
+                // запускаем задачу на прием сообщений
+                Task receiveTask = new Task(ReceiveMessages);
+                receiveTask.Start();
+
+                // отправляем первое сообщение о входе нового пользователя
+                string message = userName + " вошел в чат";
+                byte[] data = Encoding.Unicode.GetBytes(message);
+                client.Send(data, data.Length, HOST, REMOTEPORT);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "жопа!!!");
+            }
+        }
+
+
     }
 }
