@@ -40,10 +40,12 @@ D:\university\2 курс\курсач\Library_App\Library_App\obj\Debug\Library_
 D:\university\2 курс\курсач\Library_App\Library_App\obj\Debug\Library_App.pdb
 D:\university\2 курс\курсач\Library_App\Library_App\bin\Debug\Library_App.exe
 D:\university\2 курс\курсач\Library_App\Library_App\bin\Debug\Library_App.pdb
-D:\university\2 курс\курсач\Library_App\Library_App\obj\Debug\Library_App.csprojResolveAssemblyReference.cache
 D:\university\2 курс\курсач\Library_App\Library_App\obj\Debug\Library_App.DbConfigForm.resources
 D:\university\2 курс\курсач\Library_App\Library_App\obj\Debug\Library_App.LoginForm.resources
 D:\university\2 курс\курсач\Library_App\Library_App\obj\Debug\Library_App.Properties.Resources.resources
 D:\university\2 курс\курсач\Library_App\Library_App\obj\Debug\Library_App.AdminForm.resources
 D:\university\2 курс\курсач\Library_App\Library_App\obj\Debug\Library_App.ServiseForm.resources
 D:\university\2 курс\курсач\Library_App\Library_App\obj\Debug\Library_App.csproj.GenerateResource.Cache
+D:\university\2 курс\курсач\Library_App\Library_App\obj\Debug\Library_App.csprojResolveAssemblyReference.cache
+D:\university\2 курс\курсач\Library_App\Library_App\bin\Debug\ChatUdp.exe
+D:\university\2 курс\курсач\Library_App\Library_App\bin\Debug\ChatUdp.pdb

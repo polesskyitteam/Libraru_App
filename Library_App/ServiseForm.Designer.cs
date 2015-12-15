@@ -42,7 +42,7 @@
             this.lyashevskyDataSet = new Library_App.lyashevskyDataSet();
             this.label1 = new System.Windows.Forms.Label();
             this.dimensionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox = new System.Windows.Forms.GroupBox();
             this.labelName = new System.Windows.Forms.Label();
             this.buttonExit = new System.Windows.Forms.Button();
             this.buttonAdmin = new System.Windows.Forms.Button();
@@ -51,11 +51,12 @@
             this.dimensionsTableAdapter = new Library_App.lyashevskyDataSetTableAdapters.DimensionsTableAdapter();
             this.processesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.chatButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.processesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lyashevskyDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dimensionsBindingSource)).BeginInit();
-            this.groupBox2.SuspendLayout();
+            this.groupBox.SuspendLayout();
             this.groupBoxAdmin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.processesBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
@@ -75,7 +76,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBox1.Location = new System.Drawing.Point(12, 81);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(421, 336);
+            this.groupBox1.Size = new System.Drawing.Size(421, 346);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
@@ -98,7 +99,7 @@
             // buttonCansler
             // 
             this.buttonCansler.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonCansler.Location = new System.Drawing.Point(300, 288);
+            this.buttonCansler.Location = new System.Drawing.Point(300, 298);
             this.buttonCansler.Name = "buttonCansler";
             this.buttonCansler.Size = new System.Drawing.Size(100, 36);
             this.buttonCansler.TabIndex = 8;
@@ -109,7 +110,7 @@
             // buttonOk
             // 
             this.buttonOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonOk.Location = new System.Drawing.Point(194, 288);
+            this.buttonOk.Location = new System.Drawing.Point(194, 298);
             this.buttonOk.Name = "buttonOk";
             this.buttonOk.Size = new System.Drawing.Size(100, 36);
             this.buttonOk.TabIndex = 7;
@@ -178,15 +179,15 @@
             this.dimensionsBindingSource.DataMember = "Dimensions";
             this.dimensionsBindingSource.DataSource = this.lyashevskyDataSet;
             // 
-            // groupBox2
+            // groupBox
             // 
-            this.groupBox2.Controls.Add(this.labelName);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.groupBox2.Location = new System.Drawing.Point(12, 4);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(421, 71);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
+            this.groupBox.Controls.Add(this.labelName);
+            this.groupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.groupBox.Location = new System.Drawing.Point(12, 4);
+            this.groupBox.Name = "groupBox";
+            this.groupBox.Size = new System.Drawing.Size(421, 71);
+            this.groupBox.TabIndex = 1;
+            this.groupBox.TabStop = false;
             // 
             // labelName
             // 
@@ -201,7 +202,7 @@
             // buttonExit
             // 
             this.buttonExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonExit.Location = new System.Drawing.Point(454, 369);
+            this.buttonExit.Location = new System.Drawing.Point(454, 379);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(135, 36);
             this.buttonExit.TabIndex = 0;
@@ -212,7 +213,7 @@
             // buttonAdmin
             // 
             this.buttonAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonAdmin.Location = new System.Drawing.Point(15, 34);
+            this.buttonAdmin.Location = new System.Drawing.Point(15, 26);
             this.buttonAdmin.Name = "buttonAdmin";
             this.buttonAdmin.Size = new System.Drawing.Size(135, 48);
             this.buttonAdmin.TabIndex = 2;
@@ -226,7 +227,7 @@
             this.groupBoxAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBoxAdmin.Location = new System.Drawing.Point(439, 220);
             this.groupBoxAdmin.Name = "groupBoxAdmin";
-            this.groupBoxAdmin.Size = new System.Drawing.Size(158, 126);
+            this.groupBoxAdmin.Size = new System.Drawing.Size(158, 86);
             this.groupBoxAdmin.TabIndex = 4;
             this.groupBoxAdmin.TabStop = false;
             this.groupBoxAdmin.Text = "Администрирование";
@@ -255,16 +256,28 @@
             this.pictureBoxLogo.TabIndex = 5;
             this.pictureBoxLogo.TabStop = false;
             // 
+            // chatButton
+            // 
+            this.chatButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.chatButton.Location = new System.Drawing.Point(454, 324);
+            this.chatButton.Name = "chatButton";
+            this.chatButton.Size = new System.Drawing.Size(135, 36);
+            this.chatButton.TabIndex = 3;
+            this.chatButton.Text = "Чат";
+            this.chatButton.UseVisualStyleBackColor = true;
+            this.chatButton.Click += new System.EventHandler(this.chatButton_Click);
+            // 
             // ServiseForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(604, 427);
+            this.ClientSize = new System.Drawing.Size(604, 439);
             this.ControlBox = false;
+            this.Controls.Add(this.chatButton);
             this.Controls.Add(this.groupBoxAdmin);
             this.Controls.Add(this.pictureBoxLogo);
             this.Controls.Add(this.buttonExit);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "ServiseForm";
@@ -275,8 +288,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.processesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lyashevskyDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dimensionsBindingSource)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.groupBox.ResumeLayout(false);
+            this.groupBox.PerformLayout();
             this.groupBoxAdmin.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.processesBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
@@ -294,7 +307,7 @@
         private System.Windows.Forms.ComboBox comboBoxProcessS;
         private System.Windows.Forms.ComboBox comboBoxProcessF;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox;
         private System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.Label labelName;
         private System.Windows.Forms.Button buttonAdmin;
@@ -308,5 +321,6 @@
         private System.Windows.Forms.PictureBox pictureBoxLogo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dateTimePicker;
+        private System.Windows.Forms.Button chatButton;
     }
 }

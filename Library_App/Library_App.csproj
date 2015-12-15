@@ -145,6 +145,12 @@
   <ItemGroup>
     <None Include="Resources\logo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ChatUdp\ChatUdp.csproj">
+      <Project>{5158d335-8c50-496d-afe4-f8e2625a39db}</Project>
+      <Name>ChatUdp</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

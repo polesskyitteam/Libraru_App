@@ -15,6 +15,7 @@ namespace Library_App
     {
 
         public int id;
+        public string nameShtuff;
 
         public ServiseForm(bool userState, string nameShtuff, int id)
         {
@@ -27,6 +28,7 @@ namespace Library_App
                 groupBoxAdmin.Enabled = false;
 
             this.id = id;
+            this.nameShtuff = nameShtuff;
         }
 
         private void buttonAdmin_Click(object sender, EventArgs e)
@@ -92,7 +94,13 @@ namespace Library_App
             {
                 if (e.KeyChar != (char)Keys.Back) e.Handled = true;
             }
-        }                
+        }
 
+        private void chatButton_Click(object sender, EventArgs e)
+        {
+            var newForm = new ChatUdp.ChatUdp(nameShtuff);
+            newForm.Show();
+        }
+       
     }
 }

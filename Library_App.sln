@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library_App", "Library_App\Library_App.csproj", "{F05216C3-74FB-435C-940F-B2C43FE70193}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "chatUDP", "chatUDP\chatUDP.csproj", "{12EA975A-3F49-4D11-ACBA-F01C0995F46B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatUdp", "ChatUdp\ChatUdp.csproj", "{5158D335-8C50-496D-AFE4-F8E2625A39DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{F05216C3-74FB-435C-940F-B2C43FE70193}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F05216C3-74FB-435C-940F-B2C43FE70193}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F05216C3-74FB-435C-940F-B2C43FE70193}.Release|Any CPU.Build.0 = Release|Any CPU
-		{12EA975A-3F49-4D11-ACBA-F01C0995F46B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{12EA975A-3F49-4D11-ACBA-F01C0995F46B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{12EA975A-3F49-4D11-ACBA-F01C0995F46B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{12EA975A-3F49-4D11-ACBA-F01C0995F46B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5158D335-8C50-496D-AFE4-F8E2625A39DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5158D335-8C50-496D-AFE4-F8E2625A39DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5158D335-8C50-496D-AFE4-F8E2625A39DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5158D335-8C50-496D-AFE4-F8E2625A39DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

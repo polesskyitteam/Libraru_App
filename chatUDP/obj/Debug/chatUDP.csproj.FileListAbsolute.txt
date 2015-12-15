@@ -1,0 +1,8 @@
+D:\university\2 курс\курсач\Library_App\ChatUdp\bin\Debug\ChatUdp.exe.config
+D:\university\2 курс\курсач\Library_App\ChatUdp\bin\Debug\ChatUdp.exe
+D:\university\2 курс\курсач\Library_App\ChatUdp\bin\Debug\ChatUdp.pdb
+D:\university\2 курс\курсач\Library_App\ChatUdp\obj\Debug\ChatUdp.ChatUdp.resources
+D:\university\2 курс\курсач\Library_App\ChatUdp\obj\Debug\ChatUdp.Properties.Resources.resources
+D:\university\2 курс\курсач\Library_App\ChatUdp\obj\Debug\ChatUdp.csproj.GenerateResource.Cache
+D:\university\2 курс\курсач\Library_App\ChatUdp\obj\Debug\ChatUdp.exe
+D:\university\2 курс\курсач\Library_App\ChatUdp\obj\Debug\ChatUdp.pdb

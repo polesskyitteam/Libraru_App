@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace chatUDP.Properties
+namespace ChatUdp.Properties
 {
 
 
