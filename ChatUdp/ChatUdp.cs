@@ -10,19 +10,54 @@ using System.Windows.Forms;
 
 using System.Net;
 using System.Net.Sockets;
+using System.IO;
+using System.Diagnostics;
+using System.Xml.Serialization;
+
 
 namespace ChatUdp
 {
     public partial class ChatUdp : Form
     {
+        public class FileDetails
+        {
+            public string fileType = "";
+            public long fileSize = 0;
+        }
+
         bool alive = false; // будет ли работать поток для приема
         UdpClient client;
-        const int LOCALPORT = 8001; // порт для приема сообщений
-        const int REMOTEPORT = 8001; // порт для отправки сообщений
-        const int TTL = 20;
-        const string HOST = "235.5.5.1"; // хост для групповой рассылки
+        int LOCALPORT = 8001; // порт для приема сообщений
+        int REMOTEPORT = 8001; // порт для отправки сообщений
+        int TTL = 20;
+        string HOST = "235.5.5.1"; // хост для групповой рассылки
         IPAddress groupAddress; // адрес для групповой рассылки
-        string userName; 
+        string userName;
+
+
+        public int LocalPort
+        {
+            get { return LOCALPORT; }
+            set { LOCALPORT = Convert.ToInt32(value); }
+        }
+
+        public int RemoterPort
+        {
+            get { return REMOTEPORT; }
+            set { REMOTEPORT = Convert.ToInt32(value); }
+        }
+
+        public int TtL
+        {
+            get { return TTL; }
+            set { TTL = Convert.ToInt32(value); }
+        }
+
+        public string Host
+        {
+            get { return HOST; }
+            set { HOST = value; }
+        }
 
 
 
@@ -74,13 +109,21 @@ namespace ChatUdp
 
         private void Exit_Click(object sender, EventArgs e)
         {
-            string message = userName + " покидает чат";
-            byte[] data = Encoding.Unicode.GetBytes(message);
-            client.Send(data, data.Length, HOST, REMOTEPORT);
-            client.DropMulticastGroup(groupAddress);
+            try
+            {
+                string message = userName + " покидает чат";
+                byte[] data = Encoding.Unicode.GetBytes(message);
+                client.Send(data, data.Length, HOST, REMOTEPORT);
+                client.DropMulticastGroup(groupAddress);
 
-            alive = false;
-            client.Close();          
+                alive = false;
+                client.Close();  
+            }
+            catch
+            {
+                MessageBox.Show("Error!!!");
+            }
+                   
         }
      
         private void sendMessagesButton_Click(object sender, EventArgs e)
@@ -100,28 +143,51 @@ namespace ChatUdp
 
         private void EnteringButton_Click(object sender, EventArgs e)
         {
-            groupAddress = IPAddress.Parse(HOST);
-
             try
             {
-                client = new UdpClient(LOCALPORT);
-                // присоединяемся к групповой рассылке
-                client.JoinMulticastGroup(groupAddress, TTL);
+                groupAddress = IPAddress.Parse(HOST);
 
-                // запускаем задачу на прием сообщений
-                Task receiveTask = new Task(ReceiveMessages);
-                receiveTask.Start();
+                try
+                {
+                    client = new UdpClient(LOCALPORT);
+                    // присоединяемся к групповой рассылке
+                    client.JoinMulticastGroup(groupAddress, TTL);
 
-                // отправляем первое сообщение о входе нового пользователя
-                string message = userName + " вошел в чат";
-                byte[] data = Encoding.Unicode.GetBytes(message);
-                client.Send(data, data.Length, HOST, REMOTEPORT);
+                    // запускаем задачу на прием сообщений
+                    Task receiveTask = new Task(ReceiveMessages);
+                    receiveTask.Start();
 
+                    // отправляем первое сообщение о входе нового пользователя
+                    string message = userName + " вошел в чат";
+                    byte[] data = Encoding.Unicode.GetBytes(message);
+                    client.Send(data, data.Length, HOST, REMOTEPORT);
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Error!!!");
+                }
             }
-            catch (Exception ex)
+            catch
             {
-                MessageBox.Show(ex.Message, "жопа!!!");
+                MessageBox.Show("Error!!!");
             }
+            
+        }
+
+        private void addFileButton_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                wayTextBox.Text = Path.GetDirectoryName(openFileDialog1.FileName) + "'\'" + Path.GetFileName(openFileDialog1.FileName);
+            }
+        }
+
+        private void settingButton_Click(object sender, EventArgs e)
+        {
+            var newForm = new ServerSetting(LOCALPORT, REMOTEPORT, TTL, HOST);
+            newForm.Show();
+            newForm.Owner = this;
         }
 
 

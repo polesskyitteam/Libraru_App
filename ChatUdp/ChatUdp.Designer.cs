@@ -32,17 +32,21 @@
             this.ChatUdpTextBox = new System.Windows.Forms.TextBox();
             this.sendMessageTextBox = new System.Windows.Forms.TextBox();
             this.nameGroupBox = new System.Windows.Forms.GroupBox();
+            this.EnteringButton = new System.Windows.Forms.Button();
             this.usersLabel = new System.Windows.Forms.Label();
             this.Exit = new System.Windows.Forms.Button();
-            this.EnteringButton = new System.Windows.Forms.Button();
+            this.addFileButton = new System.Windows.Forms.Button();
+            this.wayTextBox = new System.Windows.Forms.TextBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.settingButton = new System.Windows.Forms.Button();
             this.nameGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // sendMessagesButton
             // 
-            this.sendMessagesButton.Location = new System.Drawing.Point(400, 331);
+            this.sendMessagesButton.Location = new System.Drawing.Point(378, 289);
             this.sendMessagesButton.Name = "sendMessagesButton";
-            this.sendMessagesButton.Size = new System.Drawing.Size(108, 53);
+            this.sendMessagesButton.Size = new System.Drawing.Size(130, 26);
             this.sendMessagesButton.TabIndex = 0;
             this.sendMessagesButton.Text = "Send a message";
             this.sendMessagesButton.UseVisualStyleBackColor = true;
@@ -59,10 +63,10 @@
             // 
             // sendMessageTextBox
             // 
-            this.sendMessageTextBox.Location = new System.Drawing.Point(12, 331);
+            this.sendMessageTextBox.Location = new System.Drawing.Point(12, 289);
             this.sendMessageTextBox.Multiline = true;
             this.sendMessageTextBox.Name = "sendMessageTextBox";
-            this.sendMessageTextBox.Size = new System.Drawing.Size(360, 53);
+            this.sendMessageTextBox.Size = new System.Drawing.Size(360, 41);
             this.sendMessageTextBox.TabIndex = 2;
             // 
             // nameGroupBox
@@ -76,6 +80,16 @@
             this.nameGroupBox.TabIndex = 3;
             this.nameGroupBox.TabStop = false;
             // 
+            // EnteringButton
+            // 
+            this.EnteringButton.Location = new System.Drawing.Point(340, 16);
+            this.EnteringButton.Name = "EnteringButton";
+            this.EnteringButton.Size = new System.Drawing.Size(65, 23);
+            this.EnteringButton.TabIndex = 2;
+            this.EnteringButton.Text = "Entering";
+            this.EnteringButton.UseVisualStyleBackColor = true;
+            this.EnteringButton.Click += new System.EventHandler(this.EnteringButton_Click);
+            // 
             // usersLabel
             // 
             this.usersLabel.AutoSize = true;
@@ -88,7 +102,7 @@
             // 
             // Exit
             // 
-            this.Exit.Location = new System.Drawing.Point(425, 16);
+            this.Exit.Location = new System.Drawing.Point(411, 16);
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(65, 23);
             this.Exit.TabIndex = 0;
@@ -96,21 +110,47 @@
             this.Exit.UseVisualStyleBackColor = true;
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
-            // EnteringButton
+            // addFileButton
             // 
-            this.EnteringButton.Location = new System.Drawing.Point(354, 16);
-            this.EnteringButton.Name = "EnteringButton";
-            this.EnteringButton.Size = new System.Drawing.Size(65, 23);
-            this.EnteringButton.TabIndex = 2;
-            this.EnteringButton.Text = "Entering";
-            this.EnteringButton.UseVisualStyleBackColor = true;
-            this.EnteringButton.Click += new System.EventHandler(this.EnteringButton_Click);
+            this.addFileButton.Location = new System.Drawing.Point(378, 335);
+            this.addFileButton.Name = "addFileButton";
+            this.addFileButton.Size = new System.Drawing.Size(130, 26);
+            this.addFileButton.TabIndex = 4;
+            this.addFileButton.Text = "Add file";
+            this.addFileButton.UseVisualStyleBackColor = true;
+            this.addFileButton.Click += new System.EventHandler(this.addFileButton_Click);
+            // 
+            // wayTextBox
+            // 
+            this.wayTextBox.Enabled = false;
+            this.wayTextBox.Location = new System.Drawing.Point(12, 339);
+            this.wayTextBox.Name = "wayTextBox";
+            this.wayTextBox.Size = new System.Drawing.Size(360, 20);
+            this.wayTextBox.TabIndex = 6;
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // settingButton
+            // 
+            this.settingButton.BackgroundImage = global::ChatUdp.Properties.Resources.settings;
+            this.settingButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.settingButton.Location = new System.Drawing.Point(494, 10);
+            this.settingButton.Name = "settingButton";
+            this.settingButton.Size = new System.Drawing.Size(24, 24);
+            this.settingButton.TabIndex = 7;
+            this.settingButton.UseVisualStyleBackColor = true;
+            this.settingButton.Click += new System.EventHandler(this.settingButton_Click);
             // 
             // ChatUdp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(535, 396);
+            this.ClientSize = new System.Drawing.Size(529, 367);
+            this.Controls.Add(this.settingButton);
+            this.Controls.Add(this.wayTextBox);
+            this.Controls.Add(this.addFileButton);
             this.Controls.Add(this.nameGroupBox);
             this.Controls.Add(this.sendMessageTextBox);
             this.Controls.Add(this.ChatUdpTextBox);
@@ -133,6 +173,10 @@
         private System.Windows.Forms.Button Exit;
         private System.Windows.Forms.Label usersLabel;
         private System.Windows.Forms.Button EnteringButton;
+        private System.Windows.Forms.Button addFileButton;
+        private System.Windows.Forms.TextBox wayTextBox;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Button settingButton;
     }
 }
 
